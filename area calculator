@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// function to find area of square
+float areaSquare(float side)
+{
+    return side * side;
+}
+
+// function to find area of circle
+float areaCircle(float radius)
+{
+    return 3.14 * radius * radius;
+}
+
+int main()
+{
+    float side, radius;
+
+    // get input for square
+    printf("Enter side of square: ");
+    scanf("%f", &side);
+    printf("Area of square: %.2f\n", areaSquare(side));
+
+    // get input for circle
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+    printf("Area of circle: %.2f\n", areaCircle(radius));
+
+    return 0;
+}          
+o/p:   Enter side of square: 4
+Area of square: 16.00
+Enter radius of circle: 5
+Area of circle: 78.50
